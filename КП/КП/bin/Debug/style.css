@@ -1,0 +1,8 @@
+.question::before {
+    content: "❔";
+    margin-right: 8px;
+}
+.answer::before {
+    content: "👉";
+    margin-right: 5px;
+}

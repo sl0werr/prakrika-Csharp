@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguar - Британская роскошь и мощность</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.jaguar.com/jaguar-range/f-type/features-and-specifications/_jcr_content/par1/hero/heroimagemobile.img.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        nav {
+            background: #000;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+        
+        h2 {
+            color: #d4af37;
+        }
+        
+        .main-content {
+            padding: 2rem 0;
+            background: #fff;
+        }
+        
+        .car-models {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        
+        .car-model {
+            flex-basis: 30%;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 1rem;
+            background: #fff;
+        }
+        
+        .car-model img {
+            width: 100%;
+            height: auto;
+        }
+        
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .logo {
+            width: 150px;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .car-model {
+                flex-basis: 100%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <h1>Jaguar</h1>
+            <p>Британская роскошь, мощность и элегантность</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#history">История</a></li>
+                <li><a href="#models">Модели</a></li>
+                <li><a href="#technology">Технологии</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="main-content">
+        <div class="container">
+            <section id="history">
+                <h2>История Jaguar</h2>
+                <p>Jaguar — британская автомобильная компания, основанная в 1922 году как Swallow Sidecar Company, которая изначально производила коляски для мотоциклов. В 1945 году компания была переименована в Jaguar Cars.</p>
+                <p>С момента своего основания Jaguar зарекомендовал себя как производитель роскошных, высокопроизводительных автомобилей с элегантным дизайном. Легендарные модели, такие как E-Type, XJ и F-Type, стали иконами автомобильного мира.</p>
+                <p>Сегодня Jaguar является частью Jaguar Land Rover, принадлежащей индийской Tata Motors, и продолжает выпускать автомобили, сочетающие в себе британскую роскошь и передовые технологии.</p>
+            </section>
+            
+            <section id="models">
+                <h2>Текущая линейка моделей</h2>
+                <div class="car-models">
+                    <div class="car-model">
+                        <h3>Jaguar XE</h3>
+                        <p>Компактный бизнес-седан с динамичным характером и современными технологиями.</p>
+                    </div>
+                    
+                    <div class="car-model">
+                        
+                        <h3>Jaguar XF</h3>
+                        <p>Бизнес-седан премиум-класса с роскошным интерьером и выдающимися ходовыми качествами.</p>
+                    </div>
+                    
+                    <div class="car-model">
+                       
+                        <h3>Jaguar F-PACE</h3>
+                        <p>Роскошный SUV, сочетающий спортивный характер с практичностью внедорожника.</p>
+                    </div>
+                    
+                    <div class="car-model">
+                       
+                        <h3>Jaguar F-TYPE</h3>
+                        <p>Спортивный автомобиль с эффектным дизайном и впечатляющей динамикой.</p>
+                    </div>
+                    
+                    <div class="car-model">
+                       
+                        <h3>Jaguar I-PACE</h3>
+                        <p>Первый полностью электрический SUV от Jaguar с инновационными технологиями.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="technology">
+                <h2>Инновационные технологии Jaguar</h2>
+                <p>Jaguar всегда был на переднем крае автомобильных технологий:</p>
+                <ul>
+                    <li><strong>Ingenium</strong> - семейство современных, эффективных двигателей</li>
+                    <li><strong>JaguarDrive</strong> - интеллектуальная система полного привода</li>
+                    <li><strong>Touch Pro Duo</strong> - интуитивная система мультимедиа с двумя сенсорными экранами</li>
+                    <li><strong>Electric Vehicle</strong> - технологии электромобилей в модели I-PACE</li>
+                    <li><strong>Aluminum Architecture</strong> - легкое и прочное алюминиевое шасси</li>
+                </ul>
+            </section>
+            
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Официальный сайт: <a href="https://www.jaguar.com" style="color: #d4af37;">www.jaguar.com</a></p>
+            <p>Телефон: +1-800-4-JAGUAR</p>
+            <p>© 2023 Jaguar Land Rover. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобильная трансмиссия</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #2980b9;
+            border-left: 5px solid #2980b9;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #16a085;
+        }
+        .transmission-type {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .comparison {
+            overflow-x: auto;
+        }
+        .diagram {
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 5px;
+        }
+        .pros-cons {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .pros, .cons {
+            width: 48%;
+            padding: 10px;
+        }
+        .pros {
+            background-color: #e8f8f5;
+        }
+        .cons {
+            background-color: #fdedec;
+        }
+        @media (max-width: 768px) {
+            .pros, .cons {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Автомобильная трансмиссия</h1>
+            <p>Полное руководство по типам и принципам работы трансмиссионных систем</p>
+        </header>
+
+        <section>
+            <h2>Что такое трансмиссия?</h2>
+            <p>Трансмиссия автомобиля — это совокупность механизмов, передающих крутящий момент от двигателя к ведущим колесам. Она позволяет изменять величину и направление момента, обеспечивая оптимальные условия движения автомобиля в различных условиях.</p>
+            
+            <div class="diagram">
+                <img src="СхемаТранс.png" alt="Схема трансмиссии" width="600">
+                <p><em>Основные компоненты трансмиссии автомобиля</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Основные типы трансмиссий</h2>
+
+            <div class="transmission-type">
+                <h3>1. Механическая коробка передач (МКПП)</h3>
+                <img src="МКПП.webp" alt="Механическая КПП">
+                <p>Классический вариант с ручным переключением передач с помощью рычага и педали сцепления.</p>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Преимущества:</h4>
+                        <ul>
+                            <li>Высокий КПД (до 98%)</li>
+                            <li>Надежность и долговечность</li>
+                            <li>Низкая стоимость обслуживания</li>
+                            <li>Полный контроль над автомобилем</li>
+                            <li>Меньший расход топлива (при умелом вождении)</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Недостатки:</h4>
+                        <ul>
+                            <li>Требует навыков управления</li>
+                            <li>Утомляет в пробках</li>
+                            <li>Медленное переключение по сравнению с автоматическими аналогами</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transmission-type">
+                <h3>2. Автоматическая коробка передач (АКПП)</h3>
+                <img src="АКПП.jpg" alt="Автоматическая КПП">
+                <p>Переключает передачи самостоятельно без участия водителя. Основные виды: гидротрансформаторные, роботизированные и вариаторы.</p>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Преимущества:</h4>
+                        <ul>
+                            <li>Простота управления</li>
+                            <li>Комфорт в городских условиях</li>
+                            <li>Плавность переключения</li>
+                            <li>Защита двигателя от перегрузок</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Недостатки:</h4>
+                        <ul>
+                            <li>Более высокий расход топлива</li>
+                            <li>Дорогостоящий ремонт</li>
+                            <li>Меньший КПД (85-90%)</li>
+                            <li>Задержки при переключении</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transmission-type">
+                <h3>3. Роботизированная коробка передач (РКПП)</h3>
+                <img src="РКПП.webp" alt="Роботизированная КПП">
+                <p>Механическая КПП с автоматизированным управлением. Бывают однодисковые и преселективные (DSG, PDK).</p>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Преимущества:</h4>
+                        <ul>
+                            <li>Быстрое переключение (особенно у преселективных)</li>
+                            <li>Экономичность (близка к механической)</li>
+                            <li>Возможность ручного управления</li>
+                            <li>Компактность</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Недостатки:</h4>
+                        <ul>
+                            <li>Дорогостоящий ремонт</li>
+                            <li>Рывки при переключении (у простых версий)</li>
+                            <li>Перегрев при агрессивной езде</li>
+                            <li>Сложная электроника</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transmission-type">
+                <h3>4. Вариатор (CVT)</h3>
+                <img src="Вариатор.jpg" alt="Вариатор">
+                <p>Бесступенчатая трансмиссия, плавно изменяющая передаточное число.</p>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Преимущества:</h4>
+                        <ul>
+                            <li>Идеальная плавность хода</li>
+                            <li>Оптимальные обороты двигателя</li>
+                            <li>Хорошая топливная экономичность</li>
+                            <li>Простота управления</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Недостатки:</h4>
+                        <ul>
+                            <li>Ограниченный ресурс (обычно 150-200 тыс. км)</li>
+                            <li>Дорогое обслуживание</li>
+                            <li>"Монотонный" звук двигателя</li>
+                            <li>Не любит резких стартов и буксировки</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <h2>Сравнение типов коробок передач</h2>
+            <table>
+                <tr>
+                    <th>Параметр</th>
+                    <th>МКПП</th>
+                    <th>АКПП</th>
+                    <th>РКПП</th>
+                    <th>Вариатор</th>
+                </tr>
+                <tr>
+                    <td>КПД</td>
+                    <td>95-98%</td>
+                    <td>82-90%</td>
+                    <td>90-95%</td>
+                    <td>88-92%</td>
+                </tr>
+                <tr>
+                    <td>Расход топлива</td>
+                    <td>Низкий</td>
+                    <td>Высокий</td>
+                    <td>Средний</td>
+                    <td>Низкий</td>
+                </tr>
+                <tr>
+                    <td>Ресурс</td>
+                    <td>300+ тыс. км</td>
+                    <td>250-300 тыс. км</td>
+                    <td>200-250 тыс. км</td>
+                    <td>150-200 тыс. км</td>
+                </tr>
+                <tr>
+                    <td>Стоимость ремонта</td>
+                    <td>Низкая</td>
+                    <td>Высокая</td>
+                    <td>Очень высокая</td>
+                    <td>Высокая</td>
+                </tr>
+                <tr>
+                    <td>Комфорт</td>
+                    <td>Низкий</td>
+                    <td>Высокий</td>
+                    <td>Средний</td>
+                    <td>Высокий</td>
+                </tr>
+                <tr>
+                    <td>Динамика</td>
+                    <td>Высокая</td>
+                    <td>Средняя</td>
+                    <td>Очень высокая</td>
+                    <td>Средняя</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Другие компоненты трансмиссии</h2>
+            
+            <h3>Сцепление</h3>
+            <p>Механизм, временно разъединяющий двигатель и коробку передач для плавного переключения передач.</p>
+            
+            <h3>Карданный вал</h3>
+            <p>Передает крутящий момент от коробки передач к заднему мосту (в задне- и полноприводных авто).</p>
+            
+            <h3>Дифференциал</h3>
+            <p>Распределяет крутящий момент между ведущими колесами, позволяя им вращаться с разной скоростью.</p>
+            
+            <h3>Раздаточная коробка</h3>
+            <p>В полноприводных автомобилях распределяет момент между осями.</p>
+            
+            <h3>Главная передача</h3>
+            <p>Увеличивает крутящий момент и передает его на полуоси ведущих колес.</p>
+        </section>
+
+        <section>
+            <h2>Привод автомобиля</h2>
+            
+            <div class="pros-cons">
+                <div>
+                    <h3>Передний привод (FWD)</h3>
+                    <ul>
+                        <li>Лучшая курсовая устойчивость</li>
+                        <li>Экономичность</li>
+                        <li>Больше места в салоне</li>
+                        <li>Склонность к недостаточной поворачиваемости</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Задний привод (RWD)</h3>
+                    <ul>
+                        <li>Лучшее распределение веса</li>
+                        <li>Более спортивное управление</li>
+                        <li>Склонность к избыточной поворачиваемости</li>
+                        <li>Хуже на скользкой дороге</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Полный привод (AWD/4WD)</h3>
+                    <ul>
+                        <li>Лучшая проходимость</li>
+                        <li>Уверенное сцепление в любых условиях</li>
+                        <li>Повышенный расход топлива</li>
+                        <li>Сложная и дорогая конструкция</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="Приводы.png" alt="Типы приводов" width="600">
+        </section>
+
+
+    </div>
+</body>
+</html>

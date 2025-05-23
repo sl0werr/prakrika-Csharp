@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeep - Легендарные внедорожники</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.jeep.com/content/dam/jeep/na/us/en/images/vehicle-pages/suvs/2023/wrangler/overview/hero/01-wrangler-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        nav {
+            background: #006241;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+        
+        h2 {
+            color: #006241;
+        }
+        
+        .main-content {
+            padding: 2rem 0;
+            background: #fff;
+        }
+        
+        .car-models {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        
+        .car-model {
+            flex-basis: 30%;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 1rem;
+            background: #fff;
+        }
+        
+        .car-model img {
+            width: 100%;
+            height: auto;
+        }
+        
+        footer {
+            background: #006241;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .logo {
+            width: 150px;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .car-model {
+                flex-basis: 100%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Jeep</h1>
+            <p>Легендарные внедорожники с 1941 года</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#history">История</a></li>
+                <li><a href="#models">Модели</a></li>
+                <li><a href="#technology">Технологии</a></li>
+                <li><a href="#offroad">Бездорожье</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="main-content">
+        <div class="container">
+            <section id="history">
+                <h2>История Jeep</h2>
+                <p>Jeep — американская автомобильная марка, специализирующаяся на производстве внедорожников. Бренд был создан в 1941 году для производства военных автомобилей Willys MB для армии США во время Второй мировой войны.</p>
+                <p>После войны Jeep переключился на гражданские модели, став синонимом внедорожников. Легендарные модели, такие как CJ, Wrangler и Cherokee, завоевали мировую популярность.</p>
+                <p>Сегодня Jeep является частью корпорации Stellantis и продолжает выпускать одни из самых способных внедорожников в мире, сочетая богатое наследие с современными технологиями.</p>
+            </section>
+            
+            <section id="models">
+                <h2>Текущая линейка моделей</h2>
+                <div class="car-models">
+                    <div class="car-model">
+                        
+                        <h3>Jeep Wrangler</h3>
+                        <p>Икона бренда с культовым дизайном и выдающейся проходимостью.</p>
+                    </div>
+                    
+                    <div class="car-model">
+                       
+                        <h3>Jeep Grand Cherokee</h3>
+                        <p>Флагманский люксовый внедорожник с премиальным интерьером.</p>
+                    </div>
+                    
+                    <div class="car-model">
+                      
+                        <h3>Jeep Cherokee</h3>
+                        <p>Компактный внедорожник с характером Jeep и городским комфортом.</p>
+                    </div>
+                    
+                    <div class="car-model">
+                       
+                        <h3>Jeep Compass</h3>
+                        <p>Стильный компактный кроссовер с ДНК Jeep.</p>
+                    </div>
+                    
+                    <div class="car-model">
+                       
+                        <h3>Jeep Wrangler 4xe</h3>
+                        <p>Гибридная версия легендарного Wrangler с электродвигателем.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="technology">
+                <h2>Технологии Jeep</h2>
+                <p>Jeep оснащает свои автомобили передовыми системами для бездорожья и комфорта:</p>
+                <ul>
+                    <li><strong>Selec-Terrain</strong> - система выбора режимов движения</li>
+                    <li><strong>Quadra-Lift</strong> - пневматическая подвеска с изменяемым клиренсом</li>
+                    <li><strong>Trail Rated</strong> - стандарт проходимости Jeep</li>
+                    <li><strong>4x4 Systems</strong> - различные системы полного привода</li>
+                    <li><strong>Uconnect</strong> - мультимедийная система с большим экраном</li>
+                    <li><strong>4xe</strong> - гибридные технологии с электродвигателями</li>
+                </ul>
+            </section>
+            
+            <section id="offroad">
+                <h2>Наследие бездорожья</h2>
+                <p>Jeep — это не просто автомобили, это образ жизни. Владельцы Jeep по всему миру объединяются в клубы, участвуют в офф-роуд мероприятиях и экспедициях.</p>
+                <p>Каждый Jeep проходит серьезные испытания на проходимость, включая:</p>
+                <ul>
+                    <li>Преодоление бродов глубиной до 76 см (Wrangler)</li>
+                    <li>Покорение крутых склонов с углом до 44 градусов</li>
+                    <li>Движение по боковым склонам с креном до 35 градусов</li>
+                    <li>Преодоление препятствий с перепадом высот</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Официальный сайт: <a href="https://www.jeep.com" style="color: #fff;">www.jeep.com</a></p>
+            <p>Телефон: 1-800-JEEP-USA</p>
+            <p>© 2023 Jeep. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

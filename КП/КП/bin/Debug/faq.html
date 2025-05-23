@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question {
+            font-weight: bold;
+            color: #f71010;
+            cursor: pointer;
+        }
+        .answer {
+            margin-top: 10px;
+            display: none;
+            padding-left: 15px;
+            border-left: 3px solid #3498db;
+        }
+        .show { display: block; }
+    </style>
+    <script>
+    function toggleAnswer(id) {
+        const answer = document.getElementById(`answer${id}`);
+        answer.classList.toggle('show');
+    }
+    </script>
+</head>
+<body>
+    
+    <h1>Частые вопросы (FAQ)</h1>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(1)">1. Как завести автомобиль в мороз?</div>
+        <div class="answer" id="answer1">
+            Перед запуском двигателя прогрейте аккумулятор, включив фары на 10–15 секунд. Используйте моторное масло с низкой вязкостью (5W-30). Не крутите стартер более 5 секунд.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(2)">2. Как часто менять масло в двигателе?</div>
+        <div class="answer" id="answer2">
+            Для бензиновых двигателей – каждые 10 000–15 000 км, для дизельных – 7 000–10 000 км. В тяжелых условиях (пыль, холод) сократите интервал на 20%.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(3)">3. Почему загорается Check Engine?</div>
+        <div class="answer" id="answer3">
+            Причины: неисправность датчика кислорода, проблемы с катализатором, пропуски зажигания. Для точной диагностики подключите OBD-сканер.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(4)">4. Как правильно заряжать аккумулятор?</div>
+        <div class="answer" id="answer4">
+            Отсоедините клеммы, подключите зарядное устройство (напряжение не выше 14.4В). Для обслуживаемых АКБ проверьте уровень электролита. Время зарядки: 8-12 часов при токе 10% от емкости.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(5)">5. Что означает индикатор ABS?</div>
+        <div class="answer" id="answer5">
+            Горит при неисправности антиблокировочной системы. Возможные причины: датчик скорости колеса, блок управления или предохранитель. Экстренное торможение возможно, но без ABS.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(6)">6. Почему свистит ремень генератора?</div>
+        <div class="answer" id="answer6">
+            Основные причины: износ/растяжение ремня, попадание масла, неисправность натяжителя. Рекомендуется замена ремня и проверка шкивов. При сильном износе возможен обрыв.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(7)">7. Как часто менять тормозные колодки?</div>
+        <div class="answer" id="answer7">
+            Средний срок: 30 000–50 000 км. Факторы, сокращающие ресурс: агрессивное вождение, городские пробки. Минимальная толщина накладок: 2-3 мм (для датчиков – до срабатывания индикатора).
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(8)">8. Можно ли смешивать антифриз разных цветов?</div>
+        <div class="answer" id="answer8">
+            Не рекомендуется. Цвет указывает на тип присадок (G11, G12, G13). Смешивание может вызвать образование осадка и потерю свойств. В экстренных случаях допускается смешивание только одинаковых стандартов.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(9)">9. Как сбросить ошибку Check Engine?</div>
+        <div class="answer" id="answer9">
+            1) Через OBD-сканер<br>
+            2) Отсоединением клеммы АКБ на 10+ минут (сбрасывает и другие настройки)<br>
+            3) После устранения неисправности – 30-50 циклов запуска двигателя.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(10)">10. Почему кондиционер дует теплым воздухом?</div>
+        <div class="answer" id="answer10">
+            Возможные причины:<br>
+            - Утечка хладагента (требуется диагностика и заправка)<br>
+            - Неисправность компрессора<br>
+            - Засорение конденсатора<br>
+            - Перегорел предохранитель<br>
+            Проверьте давление в системе и работу вентилятора.
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

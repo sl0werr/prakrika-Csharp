@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобильные двигатели</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .engine-type {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Автомобильные двигатели</h1>
+        
+        <div class="intro">
+            <p>Двигатель — это сердце автомобиля. Существует несколько типов двигателей, отличающихся принципом работы, топливом и характеристиками. Ниже представлены основные виды.</p>
+        </div>
+        
+        <div class="engine-type">
+            <h2>1. Бензиновые двигатели</h2>
+            <img src="БензДвиг.png" alt="Бензиновый двигатель" width="300">
+            <p>Работают на бензине, используют искру для воспламенения топливно-воздушной смеси.</p>
+            <ul>
+                <li><strong>Плюсы:</strong> Высокая мощность, плавная работа, доступность запчастей.</li>
+                <li><strong>Минусы:</strong> Больший расход топлива по сравнению с дизелем, меньший крутящий момент.</li>
+            </ul>
+        </div>
+        
+        <div class="engine-type">
+            <h2>2. Дизельные двигатели</h2>
+            <img src="ДизДвиг.png" alt="Дизельный двигатель" width="300">
+            <p>Используют дизельное топливо, воспламеняющееся от сжатия.</p>
+            <ul>
+                <li><strong>Плюсы:</strong> Экономичность, высокий крутящий момент, долговечность.</li>
+                <li><strong>Минусы:</strong> Шумность, дорогое обслуживание, проблемы с запуском в мороз.</li>
+            </ul>
+        </div>
+        
+        <div class="engine-type">
+            <h2>3. Гибридные двигатели</h2>
+            <img src="Гибрид.jpg" alt="Гибридный двигатель" width="300">
+            <p>Сочетают ДВС (обычно бензиновый) и электродвигатель.</p>
+            <ul>
+                <li><strong>Плюсы:</strong> Экономия топлива, экологичность, плавность хода.</li>
+                <li><strong>Минусы:</strong> Высокая стоимость, дорогой ремонт, вес батарей.</li>
+            </ul>
+        </div>
+        
+        <div class="engine-type">
+            <h2>4. Электрические двигатели</h2>
+            <img src="Электрдвиг.jpg" alt="Электродвигатель" width="300">
+            <p>Работают от аккумуляторов, не требуют топлива.</p>
+            <ul>
+                <li><strong>Плюсы:</strong> Нулевые выбросы, тихая работа, высокий КПД.</li>
+                <li><strong>Минусы:</strong> Ограниченный запас хода, долгая зарядка, высокая цена.</li>
+            </ul>
+        </div>
+        
+        <h2>Сравнение типов двигателей</h2>
+        <table>
+            <tr>
+                <th>Тип</th>
+                <th>Топливо</th>
+                <th>Мощность</th>
+                <th>Экономичность</th>
+                <th>Экологичность</th>
+            </tr>
+            <tr>
+                <td>Бензиновый</td>
+                <td>Бензин (АИ-92/95/98)</td>
+                <td>Высокая</td>
+                <td>Средняя</td>
+                <td>Средняя</td>
+            </tr>
+            <tr>
+                <td>Дизельный</td>
+                <td>Дизель (ДТ)</td>
+                <td>Высокий крутящий момент</td>
+                <td>Высокая</td>
+                <td>Низкая (NOx, сажа)</td>
+            </tr>
+            <tr>
+                <td>Гибридный</td>
+                <td>Бензин + электричество</td>
+                <td>Зависит от конфигурации</td>
+                <td>Очень высокая</td>
+                <td>Высокая</td>
+            </tr>
+            <tr>
+                <td>Электрический</td>
+                <td>Электричество</td>
+                <td>Мгновенный крутящий момент</td>
+                <td>Наивысшая</td>
+                <td>Очень высокая</td>
+            </tr>
+        </table>
+        
+    </div>
+</body>
+</html>

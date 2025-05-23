@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai - Новое мышление. Новые возможности.</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .hyundai-header {
+            background: linear-gradient(135deg, #002d5b 0%, #00408f 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .hyundai-logo {
+            width: 180px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+        
+        h1, h2, h3 {
+            color: #002d5b;
+            font-weight: 600;
+        }
+        
+        h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hyundai-innovations {
+            background-color: #ffffff;
+            border-left: 5px solid #002d5b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 14px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #002d5b;
+            color: white;
+            font-weight: 500;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f5f8fa;
+        }
+        
+        tr:hover {
+            background-color: #ebf2f8;
+        }
+        
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 35px 0;
+            justify-content: center;
+        }
+        
+        .image-gallery img {
+            width: calc(33% - 13px);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 25px;
+            background: linear-gradient(135deg, #002d5b 0%, #00408f 100%);
+            border-radius: 8px;
+            color: white;
+        }
+        
+        .fact-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            border-top: 4px solid #002d5b;
+            transition: transform 0.3s;
+        }
+        
+        .fact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .fact-card h3 {
+            color: #00408f;
+            margin-top: 0;
+        }
+        
+        .highlight-blue {
+            color: #00408f;
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #00408f;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            border: 2px solid #00408f;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            color: #00408f;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #00408f;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 4px solid #00408f;
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+            text-align: right;
+        }
+        
+        .right {
+            left: 50%;
+            text-align: left;
+        }
+        
+        .left::after {
+            right: -12px;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            .left, .right {
+                left: 0;
+                text-align: left;
+            }
+            
+            .image-gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hyundai-header">
+        <h1>Hyundai - Новое мышление. Новые возможности.</h1>
+        <p>Корейский автопроизводитель с мировым признанием</p>
+        <div>
+            <a href="#models" class="btn">Модельный ряд</a>
+            <a href="#innovations" class="btn">Технологии</a>
+            <a href="#history" class="btn">История</a>
+        </div>
+    </header>
+
+    <section id="history">
+        <h2>История компании</h2>
+        <p><strong>Hyundai Motor Company</strong> была основана <strong>Чон Чжу-ён</strong> в 1967 году. Компания прошла путь от сборки лицензионных моделей до глобального автопроизводителя:</p>
+        
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>1967</h3>
+                    <p>Основание Hyundai Motor Company</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>1968</h3>
+                    <p>Начало производства Ford Cortina по лицензии</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>1975</h3>
+                    <p>Первый собственный автомобиль - Pony</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>1986</h3>
+                    <p>Выход на рынок США с моделью Excel</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>1998</h3>
+                    <p>Приобретение Kia Motors</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2009</h3>
+                    <p>Запуск бренда Genesis</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2020</h3>
+                    <p>Презентация новой платформы E-GMP для электромобилей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="models">
+        <h2>Популярные модели</h2>
+        <h3>Современный модельный ряд</h3>
+        <table>
+            <tr>
+                <th>Модель</th>
+                <th>Годы выпуска</th>
+                <th>Особенности</th>
+                <th>Класс</th>
+            </tr>
+            <tr>
+                <td>Hyundai Solaris</td>
+                <td>2010-н.в.</td>
+                <td>Самый популярный седан в России</td>
+                <td>B-класс</td>
+            </tr>
+            <tr>
+                <td>Hyundai Creta</td>
+                <td>2014-н.в.</td>
+                <td>Компактный кроссовер-бестселлер</td>
+                <td>SUV</td>
+            </tr>
+            <tr>
+                <td>Hyundai Tucson</td>
+                <td>2004-н.в.</td>
+                <td>Среднеразмерный кроссовер</td>
+                <td>SUV</td>
+            </tr>
+            <tr>
+                <td>Hyundai Santa Fe</td>
+                <td>2000-н.в.</td>
+                <td>Флагманский полноразмерный SUV</td>
+                <td>SUV</td>
+            </tr>
+            <tr>
+                <td>Hyundai Elantra</td>
+                <td>1990-н.в.</td>
+                <td>Популярный седан среднего класса</td>
+                <td>C-класс</td>
+            </tr>
+            <tr>
+                <td>Hyundai Palisade</td>
+                <td>2018-н.в.</td>
+                <td>Премиальный полноразмерный внедорожник</td>
+                <td>SUV</td>
+            </tr>
+        </table>
+
+        <h3>Электромобили и гибриды</h3>
+        <ul>
+            <li><strong>Ioniq 5</strong> (2021-н.в.) - Первый электромобиль на платформе E-GMP</li>
+            <li><strong>Kona Electric</strong> (2018-н.в.) - Компактный электрокроссовер</li>
+            <li><strong>Nexo</strong> (2018-н.в.) - Водородный кроссовер</li>
+            <li><strong>Ioniq 6</strong> (2022-н.в.) - Электромобиль бизнес-класса</li>
+        </ul>
+    </section>
+
+    <section id="innovations">
+        <h2>Технологические инновации</h2>
+        <div class="hyundai-innovations">
+            <h3>Ключевые инновации Hyundai</h3>
+            <ul>
+                <li><strong>E-GMP</strong> - специализированная платформа для электромобилей</li>
+                <li><strong>HTRAC</strong> - интеллектуальная полноприводная система</li>
+                <li><strong>SmartSense</strong> - комплекс систем активной безопасности</li>
+                <li><strong>CVVD</strong> - технология изменения продолжительности открытия клапанов</li>
+                <li><strong>Bluelink</strong> - система подключенных сервисов</li>
+                <li><strong>N Performance</strong> - спортивное подразделение Hyundai</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Hyundai в цифрах</h2>
+        <ul>
+            <li><strong>Основание:</strong> 29 декабря 1967</li>
+            <li><strong>Штаб-квартира:</strong> Сеул, Южная Корея</li>
+            <li><strong>Продажи в 2022:</strong> 3.9 млн автомобилей</li>
+            <li><strong>Сотрудники:</strong> около 120,000 по всему миру</li>
+            <li><strong>Девиз компании:</strong> "New Thinking. New Possibilities."</li>
+            <li><strong>Рыночная капитализация (2023):</strong> ~$35 млрд</li>
+            <li><strong>Заводы:</strong> 8 в Корее, 7 за рубежом</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Интересные факты</h2>
+        <div class="fact-card">
+            <h3>Самый быстрый рост</h3>
+            <p>Hyundai стала самым быстрорастущим автопроизводителем в истории, выйдя с нуля до 4 млн автомобилей в год за 40 лет.</p>
+        </div>
+        
+        <div class="fact-card">
+            <h3>Гарантия 7 лет</h3>
+            <p>Hyundai первой предложила 7-летнюю гарантию на свои автомобили, что стало отраслевым стандартом.</p>
+        </div>
+        
+        <div class="fact-card">
+            <h3>Спонсорство</h3>
+            <p>Hyundai - официальный спонсор чемпионата мира по футболу FIFA с 2002 года.</p>
+        </div>
+        
+        <div class="fact-card">
+            <h3>Экология</h3>
+            <p>Hyundai планирует стать углеродно-нейтральной компанией к 2045 году.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Страница о Hyundai Motor Company</p>
+        <p>
+            <a href="https://www.hyundai.com" target="_blank" style="color: white;">Официальный сайт Hyundai</a> | 
+            <a href="https://www.hyundai.ru" target="_blank" style="color: white;">Hyundai Россия</a> | 
+            <a href="https://en.wikipedia.org/wiki/Hyundai_Motor_Company" target="_blank" style="color: white;">Wikipedia</a>
+        </p>
+        <p style="margin-top: 15px; font-size: 0.9em;">"New Thinking. New Possibilities."</p>
+    </footer>
+</body>
+</html>
